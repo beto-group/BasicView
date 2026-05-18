@@ -29,3 +29,5 @@ runtime: PureJS
 entry_point: BASIC VIEW.md
 logic: src/index.jsx
 ---
+
+This file contains the machine-readable packaging manifest and indexing properties for this component.
