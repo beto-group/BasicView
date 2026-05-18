@@ -3,7 +3,7 @@
   <a name="readme-top"></a>
   <img src="https://raw.githubusercontent.com/beto-group/beto.assets/main/BETO.logo.animated.svg?raw=true" alt="LOGO" width="160">
   <h1 align="center">BASIC VIEW</h1>
-  <h3 align="center"> Tʜᴇ Ts-Sᴀғᴇ W9ʀᴋsᴘᴀᴄᴇ Pᴀbm Pᴀɴᴇ Cᴏbmᴛᴀɪbmᴇʀ </h3>
+  <h3 align="center"> The Test-Safe Workspace Folder View Container </h3>
 </div>
 
 <div align="center">
