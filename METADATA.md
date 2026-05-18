@@ -1,14 +1,15 @@
 ---
 author: beto.group
-version: 4.0.0
-id: basic-view-v4-folder-skeleton-888
+version: 5.0.0
+id: basic-view-888
 name: BASIC VIEW
-description: A boilerplate React workspace tab designed for full-pane DOM injection and layout breaking, utilizing folder structure.
+description: An advanced boilerplate React workspace tab designed for full-pane DOM injection, verified with unit testing and comprehensive safety types, utilizing folder structure.
 status: stable
-complexity: intermediate
+complexity: advanced
 category:
   - Developer Tools
   - Window Management
+  - Testing
 compatibility:
   - Obsidian >=1.5.0
 repository:
@@ -28,3 +29,5 @@ runtime: PureJS
 entry_point: BASIC VIEW.md
 logic: src/index.jsx
 ---
+
+This file contains the machine-readable packaging manifest and indexing properties for this component.

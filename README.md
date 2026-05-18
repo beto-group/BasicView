@@ -19,7 +19,7 @@
   <hr>
 </div>
 
-![Basic View Walkthrough](assets/basicview.clip.gif)
+![Basic View Walkthrough](basicview.clip.gif)
 
 <div align="center">
   <p>
@@ -58,8 +58,8 @@ The package exposes the following compiled files:
 | File | Description |
 | :--- | :--- |
 | **[BASIC VIEW.md](BASIC%20VIEW.md)** | The main entry point leaf designed to be loaded inside Obsidian panes. |
-| **[src/index.jsx](src/index.jsx)** | Main bootstrap application loader that resolves and wires the underlying views. |
-| **[src/TestRunner.jsx](src/TestRunner.jsx)** | Comprehensive automated in-client unit testing suite runner. |
-| **[METADATA.md](METADATA.md)** | Packaging manifest outlining indexing, target, and security configurations. |
-| **[CONTRIBUTION.md](CONTRIBUTION.md)** | Contributor architecture standards and local compilation guidelines. |
-| **[LICENSE.md](LICENSE.md)** | MIT open-source license. |
+| **[_RESOURCES/DATACORE/_DONE/BASIC VIEW/src/index.jsx](_RESOURCES/DATACORE/_DONE/BASIC%20VIEW/src/index.jsx)** | Main bootstrap application loader that resolves and wires the underlying views. |
+| **[_RESOURCES/DATACORE/_DONE/BASIC VIEW/src/TestRunner.jsx](_RESOURCES/DATACORE/_DONE/BASIC%20VIEW/src/TestRunner.jsx)** | Comprehensive automated in-client unit testing suite runner. |
+| **[METADATA.md](_RESOURCES/DATACORE/_DONE/BASIC%20VIEW/METADATA.md)** | Packaging manifest outlining indexing, target, and security configurations. |
+| **[CONTRIBUTION.md](_RESOURCES/DATACORE/_DONE/BASIC%20VIEW/CONTRIBUTION.md)** | Contributor architecture standards and local compilation guidelines. |
+| **[LICENSE.md](_RESOURCES/DATACORE/_DONE/BASIC%20VIEW/LICENSE.md)** | MIT open-source license. |
