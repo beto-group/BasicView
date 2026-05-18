@@ -1,12 +1,12 @@
-# BASIC VIEW
+---
+layout: grid
+pageSize: 20
+autoLoad: true
+---
 
 ```datacorejsx
-const activeFileObj = (dc.app || app).vault.getAbstractFileByPath(dc.path);
-const activeFilePath = activeFileObj?.path || "";
-let folderPath = activeFilePath.substring(0, activeFilePath.lastIndexOf('/'));
-
-const AppModule = await dc.require(folderPath + "/src/App.jsx");
-const { View } = await AppModule({ folderPath, dc });
-
-return <View />;
+const activeFile = dc.resolvePath("BASIC VIEW");
+const folderPath = activeFile.substring(0, activeFile.lastIndexOf('/'));
+const { View } = await dc.require(folderPath + "/src/index.jsx");
+return await View({ folderPath });
 ```
