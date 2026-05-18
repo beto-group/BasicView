@@ -1,33 +1,24 @@
-# Engineering & Contribution Guide
+# 🛠️ Contributing to Basic View (main)
 
-This guide defines the architectural standards, performance pillars, and development workflows for maintaining **BASIC VIEW**.
-
----
-
-## 🛠️ Core Engineering Pillars
-
-### 1. Zero-Dependency Sandbox Safety
-*   **Sandboxed Runtime**: All code must execute cleanly inside the global `dc` context without referencing external node APIs or third-party modules.
-*   **Encapsulation**: Styles, utilities, and helper functions must remain local to `src/BasicView.component.jsx` to prevent global CSS bleed.
-
-### 2. Immersive DOM Reparenting (Workspace Docking)
-*   **Dynamic Leaf Traversal**: Full-tab mode works by traversing the DOM upwards to locate the nearest `.workspace-leaf-content` ancestor and appending the component directly to `.view-content`.
-*   **Layout Preservation**: A hidden placeholder `div` must be prepended at the original parent node's location during reparenting. When the component unmounts, it must seamlessly return to its placeholder's position to avoid breaking the markdown preview flow.
-*   **State Refs Management**: Keep references to original parents and dimensions inside an un-managed `useRef({})` object. Do not trigger React re-renders for styling positions or DOM operations.
-
-### 3. Timestamped File Hot-Reloading (HMR-like Loop)
-*   **Isolated Renders**: Clicking the reload button reads the active note using Obsidian's `vault.adapter.read()`.
-*   **Clutter Cleanup**: Write the current file's content into a temporary note inside `_RESOURCES/temp` named `_temp-[fileName]-[timestamp].md`, and launch it in a new leaf to force Datacore's compiler to reload.
-*   **Garbage Collection**: Unmounting the container must trigger active cleanups of the temporary files to prevent vault clutter.
+Welcome! This document outlines the core developer standards, unit testing frameworks, and compilation guidelines required to maintain the advanced implementation of the Basic View.
 
 ---
 
-## 💻 Local Compilation & Testing
-1.  Add `BASIC VIEW` into your local vault under `_RESOURCES/DATACORE/`.
-2.  Create a testing note that calls `BASIC VIEW` via a codeblock import:
-    ```datacorejsx
-    const AppModule = await dc.require("_RESOURCES/DATACORE/BASIC VIEW/src/App.jsx");
-    const { View } = await AppModule({ folderPath: "_RESOURCES/DATACORE/BASIC VIEW", dc });
-    return <View />;
-    ```
-3.  Click **"Enter Full Tab"** to test workspace leaf reparenting, and use the **Reload** icon to check the file-based code reload sequence.
+## 🏛️ Core Architecture Pillars
+
+1.  **Full-Pane DOM Interception**:
+    *   The view targets the nearest `.workspace-leaf-content` ancestor and replaces standard Markdown leaves with a full-pane portal overlay.
+    *   Dynamic lifecycle hooks (`useFullTab`) manage mounting and cleanups edge-to-edge.
+2.  **Anti-Bleed Style Isolation**:
+    *   All styles must be scoped tightly under standard container class keys (`.basic-folder-view-container`) to avoid spilling into the Obsidian UI or interfering with active user themes.
+3.  **Automated Unit Testing Framework**:
+    *   This component features a built-in automated test suite (`vitest` / Preact testing library) run inside a custom interactive client test runner (`src/TestRunner.jsx`). All layout modifications must pass the test suites before shipping.
+4.  **Sterile Zero-Dependency Flow**:
+    *   The view must rely strictly on standard pre-loaded React hooks (`useState`, `useEffect`, `useRef`) provided by the `dc` host workspace compiler leaf.
+
+---
+
+## 🚀 Local Compilation & Test Runner Loop
+
+*   **Test Suite Entry Point**: The client test runner is loaded at `src/TestRunner.jsx`. It performs assertions on layout behaviors, DOM injections, and cleanup triggers.
+*   **Hot Reload Trigger**: During development, use the reload action menu or press the reload button inside the UI panel to invoke `dc.app.workspace.activeLeaf.rebuildView()`. This automatically flushes Obsidian's internal module cache, loading your latest React changes instantly with zero system reboots.
