@@ -33,10 +33,21 @@ Welcome to **Basic View**, the production-grade container architecture for full-
 ---
 
 ## ✨ Features
-*   🖥️ **Rigid DOM Reparenting Hooks**: Incorporates custom React hook lifecycle layers (`useFullTab`) to isolate and overlay Obsidian leaves securely.
-*   🛡️ **Integrated Unit Verification**: Features a dedicated in-client test runner (`src/TestRunner.jsx`) conducting automated layout and DOM mounting test suites inside the leaf interface.
-*   🧹 **Anti-Bleed Style Isolation**: Scopes all layout layers under unique instance hashes to prevent standard styling leaks into host Obsidian configurations.
-*   🔄 **Local Developer Hot-Reloading**: Built-in re-mounting hooks trigger leaf updates instantly without app reboots, speeding up code development loops.
+
+### 🛡️ Runtime & Agentic Safety
+*   🐕 **Safe Agent Watchdog Guard**: Active safety daemon monitoring runtime memory boundaries, managing automatic crash-recovery loops, and protecting workspace state.
+*   🖥️ **Rigid DOM Reparenting Hooks**: Incorporates custom Preact/React hook lifecycle layers (`useFullTab`) to isolate and overlay active Obsidian workspace leaves securely.
+*   🔌 **Bi-Directional MCP Bridge**: Wires a standalone Model Context Protocol controller into the leaf, letting agentic AI systems execute verified workflow commands directly.
+
+### 🔐 Security & Integrations
+*   🔑 **Keychain Security Bridge**: Implements standard OS keychain credential gates, enabling secure local storage and decryption of OAuth authentication tokens and API keys.
+*   ✈️ **Native Telegram API Engine**: Integrates a client-side Telegram user-bot engine (`telegramClient_v3.js`) to handle live channels, dialogue, and notifications directly from the view.
+*   🧹 **Anti-Bleed Style Isolation**: Scopes layout components under rigid container class keys (`.bfv-container`), preventing CSS leakage into host Obsidian workspace configurations.
+
+### 📐 User Interface & Developer Loop
+*   📊 **Responsive 12-Column Grid Dashboard**: Employs elegant HSL dark-mode themes across an adaptive column grid, shifting layout structures between 4c (mobile), 8c (tablet), and 12c (desktop).
+*   🧪 **Integrated In-Client Unit Verification**: Embedded interactive unit testing framework (`tests/suite.jsx`, `src/TestRunner.jsx`) conducting live assertions and lifecycle tests.
+*   🔄 **Local Developer Hot-Reloading**: Smart module-cache flushing hooks re-render active React components instantly on save, completely avoiding host system reboots.
 
 ---
 
