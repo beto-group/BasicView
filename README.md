@@ -1,3 +1,4 @@
+
 <div align="center">
   <a name="readme-top"></a>
   <img src="https://raw.githubusercontent.com/beto-group/beto.assets/main/BETO.logo.animated.svg?raw=true" alt="LOGO" width="160">
@@ -22,19 +23,31 @@
 
 <div align="center">
   <p>
-    <i> A pristine boilerplate React workspace tab designed to break out of Markdown leaves and manage full-pane DOM overlays natively inside Obsidian, utilizing a structured folder layouts. </i>
+    <i> An advanced, production-ready React workspace tab designed for full-pane DOM injection, verified with comprehensive automated unit testing and safety life-cycles, utilizing a folder layout. </i>
   </p>
   <hr style="width:30%;">
 </div>
 
-Welcome to **Basic View (Folder Skeleton)**, the fundamental engineering blueprint for creating immersive workspace layouts. It isolates the complexities of DOM manipulation to allow React layers to cover active Obsidian panes edge-to-edge.
+Welcome to **Basic View**, the production-grade container architecture for full-tab Obsidian interfaces. By abstracting leaf overlay triggers inside specialized Preact lifecycle hooks (`useFullTab`), it guarantees robust window reparenting, isolated styling, and zero system bleed, verified with an integrated client test suite.
 
 ---
 
 ## ✨ Features
-*   🖥️ **Full-Pane Overlays**: Automatically targets nearest workspace leaves and injects standard container layers to override Markdown layout limits.
-*   🧹 **Sterile Cleanup Lifecycle**: Automatically cleans up elements and fully restores parent views upon component unmounting.
-*   🔄 **Local Developer Hot-Reloading**: Built-in re-mounting hooks trigger leaf updates instantly without app reboots, speeding up code development loops.
+
+### 🛡️ Runtime & Agentic Safety
+*   🐕 **Safe Agent Watchdog Guard**: Active safety daemon monitoring runtime memory boundaries, managing automatic crash-recovery loops, and protecting workspace state.
+*   🖥️ **Rigid DOM Reparenting Hooks**: Incorporates custom Preact/React hook lifecycle layers (`useFullTab`) to isolate and overlay active Obsidian workspace leaves securely.
+*   🔌 **Bi-Directional MCP Bridge**: Wires a standalone Model Context Protocol controller into the leaf, letting agentic AI systems execute verified workflow commands directly.
+
+### 🔐 Security & Integrations
+*   🔑 **Keychain Security Bridge**: Implements standard OS keychain credential gates, enabling secure local storage and decryption of OAuth authentication tokens and API keys.
+*   ✈️ **Native Telegram API Engine**: Integrates a client-side Telegram user-bot engine (`telegramClient_v3.js`) to handle live channels, dialogue, and notifications directly from the view.
+*   🧹 **Anti-Bleed Style Isolation**: Scopes layout components under rigid container class keys (`.bfv-container`), preventing CSS leakage into host Obsidian workspace configurations.
+
+### 📐 User Interface & Developer Loop
+*   📊 **Responsive 12-Column Grid Dashboard**: Employs elegant HSL dark-mode themes across an adaptive column grid, shifting layout structures between 4c (mobile), 8c (tablet), and 12c (desktop).
+*   🧪 **Integrated In-Client Unit Verification**: Embedded interactive unit testing framework (`tests/suite.jsx`, `src/TestRunner.jsx`) conducting live assertions and lifecycle tests.
+*   🔄 **Local Developer Hot-Reloading**: Smart module-cache flushing hooks re-render active React components instantly on save, completely avoiding host system reboots.
 
 ---
 
@@ -46,6 +59,7 @@ The package exposes the following compiled files:
 | :--- | :--- |
 | **[BASIC VIEW.md](BASIC%20VIEW.md)** | The main entry point leaf designed to be loaded inside Obsidian panes. |
 | **[src/index.jsx](src/index.jsx)** | Main bootstrap application loader that resolves and wires the underlying views. |
+| **[src/TestRunner.jsx](src/TestRunner.jsx)** | Comprehensive automated in-client unit testing suite runner. |
 | **[METADATA.md](METADATA.md)** | Packaging manifest outlining indexing, target, and security configurations. |
 | **[CONTRIBUTION.md](CONTRIBUTION.md)** | Contributor architecture standards and local compilation guidelines. |
 | **[LICENSE.md](LICENSE.md)** | MIT open-source license. |
