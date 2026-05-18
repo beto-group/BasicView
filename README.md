@@ -19,7 +19,7 @@
   <hr>
 </div>
 
-![Basic View Walkthrough](assets/basicfolderview.clip.gif)
+![Basic View Walkthrough](assets/basicview.clip.gif)
 
 <div align="center">
   <p>
