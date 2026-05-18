@@ -15,8 +15,8 @@ repository:
   - https://github.com/beto-group/BasicView
 missing: []
 resources:
-  - assets/basic_folder_view.webp
-  - assets/basicfolderview.clip.gif
+  - assets/basic_view.webp
+  - assets/basicview.clip.gif
 type: DatacoreComponent
 target: Datacore
 security:
