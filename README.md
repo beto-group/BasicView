@@ -55,10 +55,10 @@ The package exposes the following compiled files:
 
 | File | Description |
 | :--- | :--- |
-| **[BASIC VIEW.md](file:///Volumes/BackUp_WB-1TB/APPLICATIONS/BETO_BACKEND/app-repos/production-contabo/DATACORE/_RESOURCES/DATACORE/BASIC%20VIEW/BASIC%20VIEW.md)** | The main entry point designed to be loaded inside Obsidian canvases or workspace leaves. |
-| **[src/App.jsx](file:///Volumes/BackUp_WB-1TB/APPLICATIONS/BETO_BACKEND/app-repos/production-contabo/DATACORE/_RESOURCES/DATACORE/BASIC%20VIEW/src/App.jsx)** | Main bootstrap application loader that resolves and wires the underlying views. |
-| **[src/BasicView.component.jsx](file:///Volumes/BackUp_WB-1TB/APPLICATIONS/BETO_BACKEND/app-repos/production-contabo/DATACORE/_RESOURCES/DATACORE/BASIC%20VIEW/src/BasicView.component.jsx)** | High-fidelity React components (HMR Container and reparenting layouts). |
-| **[METADATA.md](file:///Volumes/BackUp_WB-1TB/APPLICATIONS/BETO_BACKEND/app-repos/production-contabo/DATACORE/_RESOURCES/DATACORE/BASIC%20VIEW/METADATA.md)** | Packaging manifest outlining indexing, target, and security configurations. |
+| **[BASIC VIEW.md](BASIC%20VIEW.md)** | The main entry point designed to be loaded inside Obsidian canvases or workspace leaves. |
+| **[src/App.jsx](src/App.jsx)** | Main bootstrap application loader that resolves and wires the underlying views. |
+| **[src/BasicView.component.jsx](src/BasicView.component.jsx)** | High-fidelity React components (HMR Container and reparenting layouts). |
+| **[METADATA.md](METADATA.md)** | Packaging manifest outlining indexing, target, and security configurations. |
 
 ---
 
